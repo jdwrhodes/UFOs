@@ -23,3 +23,9 @@ function buildTable(data) {
       );
     });
   }
+
+  function handleClick(){
+      let  date = d3.select("#datetime").property("value"); //Chaining .property("value"); to the d3.select function, it tells D3 not only to look for where our date values are stored on the webpage, but to actually grab that information and hold it in the "date" variable.
+      let filteredData = tableData; //table data was assigned at the beginning. It's acting as the Raw/original data. This is being assigned to filteredData to give us a blank slate.
+
+  }
