@@ -1,22 +1,22 @@
 function someFunction(){
-    console.log("hello!")
+    console.log("Hello!");
 }
 
-function Animal(animalName, animalType, animalSound){
-    this.animalName = animalName; // 'this' is the equivalent to 'self' in python
+function Animal(animalName,animalType,animalSound){
+    this.animalName = animalName;
     this.animalType = animalType;
     this.animalSound = animalSound;
-
-
 }
 
-motelPrototype = Animal('Motely', 'Cat', 'Meow' );
+var motelyProtoype = new Animal('Motely','Cat','Meow');
 
-function printSound(someObject){
-    console.log(someObject.animalSound);
+
+motelyProtoype.printSound = function (){
+    console.log(this.animalSound);
 }
 
-motelPrototype.printSound();
+motelyProtoype.printSound();
 
-laikaPrototype = Animal('laika', 'dog', 'woof')
+var laikaProtoype = new Animal('Laika','Dog','Woof');
 
+laikaProtoype.printSound()
